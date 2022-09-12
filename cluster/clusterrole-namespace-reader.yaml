@@ -3,7 +3,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: namespace-reader
   annotations:
-    configmanagement.gke.io/cluster-selector: cluster-selector
+    configmanagement.gke.io/cluster-selector: new-selector
 rules:
 - apiGroups: [""]
   resources: ["namespaces"]

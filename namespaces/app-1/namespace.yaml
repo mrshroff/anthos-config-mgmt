@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   name: app-1
   annotations:
-    configmanagement.gke.io/cluster-selector: cluster-selector
+    configmanagement.gke.io/cluster-selector: new-selector
