@@ -3,4 +3,4 @@ kind: ServiceAccount
 metadata:
   name: sa
   annotations:
-    configsync.gke.io/cluster-name-selector: cluster-1
+    configsync.gke.io/cluster-name-selector: cluster-1-1
