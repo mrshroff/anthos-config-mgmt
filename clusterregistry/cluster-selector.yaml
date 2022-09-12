@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     matchLabels:
+      state: ak
       #edge: heavy
       #facility: combination
-      state: ak
       #store: 7010700668
