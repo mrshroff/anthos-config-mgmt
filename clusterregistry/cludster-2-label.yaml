@@ -1,0 +1,9 @@
+kind: Cluster
+apiVersion: clusterregistry.k8s.io/v1alpha1
+metadata:
+  name: "cluster-2"
+  labels:
+    edge: heavy
+    facility: combination
+    state: ak
+    store: "7010700011"
