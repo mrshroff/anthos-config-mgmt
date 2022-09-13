@@ -3,4 +3,4 @@ kind: ServiceAccount
 metadata:
   name: sa
   annotations:
-    configmanagement.gke.io/cluster-selector: selector-another
+    configmanagement.gke.io/cluster-selector: "selector-new"
