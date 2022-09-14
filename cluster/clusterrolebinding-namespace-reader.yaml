@@ -2,8 +2,8 @@ kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: namespace-reader
-  annotations:
-    configmanagement.gke.io/cluster-selector: "selector-new"
+#  annotations:
+#    configmanagement.gke.io/cluster-selector: "selector-new"
 roleRef:
   kind: ClusterRole
   name: namespace-reader
