@@ -6,7 +6,7 @@ spec:
   selector:
     matchExpressions:
       - key: "state"
-        operator: In
+        operator: NotIn
         values:
         - "ak"
         - "al"
