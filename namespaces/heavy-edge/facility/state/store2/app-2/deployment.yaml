@@ -1,37 +1,37 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: helloworld
+  name: helloworld-store-2
   annotations:
-    configmanagement.gke.io/cluster-selector: "selector-new"
+    configmanagement.gke.io/cluster-selector: "selector-store-2"
   labels:
-    app: helloworld
+    app: helloworld-store-2
 spec:
   ports:
   - name: http
     port: 8000
     targetPort: 8000
   selector:
-    app: helloworld
+    app: helloworld-store-2
   type: LoadBalancer
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: helloworld
+  name: helloworld-store-2
   annotations:
-    configmanagement.gke.io/cluster-selector: "selector-new"
+    configmanagement.gke.io/cluster-selector: "selector-store-2"
   labels:
-    app: helloworld
+    app: helloworld-store-2
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: helloworld
+      app: helloworld-store-2
   template:
     metadata:
       labels:
-        app: helloworld
+        app: helloworld-store-2
     spec:
       containers:
       - name: helloworld
