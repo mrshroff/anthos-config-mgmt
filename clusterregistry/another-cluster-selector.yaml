@@ -1,11 +1,12 @@
 kind: ClusterSelector
 apiVersion: configmanagement.gke.io/v1
 metadata:
-  name: selector-another
+  name: selector-with-expression
 spec:
   selector:
     matchExpressions:
-      - key: state
+      - key: "state"
         operator: In
         values:
-        - ak
+        - "ak"
+        - "al"
