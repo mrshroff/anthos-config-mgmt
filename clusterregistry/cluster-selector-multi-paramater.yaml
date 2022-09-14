@@ -1,0 +1,11 @@
+kind: ClusterSelector
+apiVersion: configmanagement.gke.io/v1
+metadata:
+  name: selector-multi
+spec:
+  selector:
+    matchLabels:
+      "edge": "heavy"
+      "facility": "marketplace"
+      "state": "ak"
+#      "store": "7010700011"

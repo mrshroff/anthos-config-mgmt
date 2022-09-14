@@ -26,6 +26,6 @@ metadata:
   name: "cluster-3-1"
   labels:
     "edge": "heavy"
-    "facility": "combination"
+    "facility": "marketplace"
     "state": "al"
     "store": "0110n00310"
